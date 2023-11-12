@@ -38,3 +38,5 @@ install_github("yonghah/esri2sf") #worked!
 #other two packages still have problem but I could run a_01_preproc_smart_location_dta.R file and generate the data
 
 # added on line 15 of code "#Selection of urban spatial variables, details in table 1 of manuscript"
+
+#checking "a_02_barrier_factor_prep.R" no data folder and file roads/osm_driving_network_northeast.rds at line #36
