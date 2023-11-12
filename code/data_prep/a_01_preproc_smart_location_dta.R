@@ -12,6 +12,7 @@ crs <- 2163 #
 # data from smart location database - find link in readme
 sld_us <- sf::read_sf(paste0(geometry.data.folder, "SmartLocationDatabase.gdb"))
 
+#Selection of urban spatial variables, details in table 1 of manuscript
 var_name <- c("GEOID20", "STATEFP", "COUNTYFP", "TRACTCE", "BLKGRPCE",
               "Ac_Total", "Ac_Unpr", 
               "TotPop", "CountHU", "HH", "P_WrkAge", 
