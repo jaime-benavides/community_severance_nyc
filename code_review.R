@@ -9,7 +9,7 @@
 library(devtools)
 install_github("Columbia-PRIME/PCPhelpers") #worked fine 
 install_github("Columbia-PRIME/pcpr") #having error, also tried Lawrence suggested way but have same error 
-
+install.packages("pcpr-master", repos = NULL, type="source")
 #installing *source* package ‘pcpr’ ...
 # ** using staged installation
 # ** R
@@ -32,3 +32,9 @@ install.packages("multiprocess")
 remotes::install_github("Columbia-PRIME/pcpr")
 
 # Jaime; In general I have two issues so far; 1- I coudn't install pcpr package, and 2- couldn't clone this repository to R; maybe you need to grant me persmission!
+
+#checking "a_01_preproc_smart_location_dta.R" packages issue "esri2sf", "rgeos" and "pcpr"
+install_github("yonghah/esri2sf") #worked!
+#other two packages still have problem but I could run a_01_preproc_smart_location_dta.R file and generate the data
+
+# added on line 15 of code "#Selection of urban spatial variables, details in table 1 of manuscript"
