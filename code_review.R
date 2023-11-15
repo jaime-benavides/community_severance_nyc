@@ -43,3 +43,5 @@ install_github("yonghah/esri2sf") #worked!
 # I don't see table 2 generation code; Jaime, its straight forward summary function but maybe I missed it in scripts
 
 #Note: I had issues in running pre-processing scripts but mostly issues were with directories, which is very small fix.
+
+#I will have another look to each script and add my comments, whereever it's necessary!
