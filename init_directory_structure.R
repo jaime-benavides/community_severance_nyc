@@ -1,3 +1,4 @@
+#script aim: this script creates directories required for the code structure of this study
 # File: init_directory_structure.R
 # Author(s): Jaime Benavides, Lawrence Chillrud
 # Date since last edit: 5/20/21
@@ -30,6 +31,8 @@ geometry.data.folder <- paste0(raw.data.folder, "geometry/")
 traffic.data.folder <- paste0(raw.data.folder, "traffic/")
 generated.data.folder <- paste0(data.folder, "generated/")
 output.folder <- paste0(project.folder, "output/")
+#we might need a path for reading car crashes file in c_03 file line 21 "crashes <- readr::read_csv(paste0(traffic.data.folder, "Motor_Vehicle_Collisions_-_Crashes_20231113.csv"))"
+
 
 # 1b Store all folder names from 1a (above) in a vector:
 folder.names <- grep(".folder",names(.GlobalEnv),value=TRUE)
