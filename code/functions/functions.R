@@ -1,5 +1,6 @@
+# script aim: This script creates all functions used in this study 
 
-# kriging from mid point 
+#1. kriging from mid point 
 # adapted from Criado et al. (2022) https://earth.bsc.es/gitlab/es/universalkriging/-/blob/production/general/UK_mean.R
 regrid_ok <- function(non_uniform_data, target_grid,crs_sim = "+proj=utm +zone=31 +ellps=intl +units=m +no_defs"){
   if(isTRUE(class(non_uniform_data) != "SpatialPointsDataFrame")){
