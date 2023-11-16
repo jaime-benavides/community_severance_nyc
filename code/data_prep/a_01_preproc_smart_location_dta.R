@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: This script is preparing spatial data sets for this study from Smart Location Database (Jaime, please add or correct the aims/objective)
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')
@@ -12,7 +12,7 @@ crs <- 2163 #
 # data from smart location database - find link in readme
 sld_us <- sf::read_sf(paste0(geometry.data.folder, "SmartLocationDatabase.gdb"))
 
-#Selection of urban spatial variables, details in table 1 of manuscript
+#Selection of urban spatial variables, details in table 1 of manuscript (Jaime, you can add more details or delete if it's incorrect)
 var_name <- c("GEOID20", "STATEFP", "COUNTYFP", "TRACTCE", "BLKGRPCE",
               "Ac_Total", "Ac_Unpr", 
               "TotPop", "CountHU", "HH", "P_WrkAge", 
