@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: create maps for barrier factor and community severance index in NYC
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')
@@ -50,7 +50,7 @@ park_geiods <- sld_us_loc_df[which(sld_us_loc_df$TotPop < 20),"GEOID20"]
 comm_sev_sf_p <- comm_sev_sf[-which(comm_sev_sf$GEOID20 %in% park_geiods$GEOID20),]
 
 # read road infrastructure for plotting
-faf5_network <- sf::read_sf(paste0(geometry.data.folder, "FAF5_Model_Highway_Network/Networks/geodatabase_format/FAF5Network.gdb"))
+faf5_network <- sf::read_sf(paste0(geometry.data.folder, "FAF5Network.gdb"))
 faf5_highways <- faf5_network[which(faf5_network$F_Class %in% c(1,2,3)),]
 faf5_highways <- faf5_highways %>%
   sf::st_transform(crs)

@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: estimate community severance index for NYC
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')

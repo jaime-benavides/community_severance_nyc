@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: prepare openstreetmaps data
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')

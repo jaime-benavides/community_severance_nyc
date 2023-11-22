@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: build statistical models linking community severance index and road safety
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')
@@ -18,7 +18,7 @@ colnames(cbg_adi)[2] <- "GEOID20"
 
 # motor vehicle collisions
 
-crashes <- readr::read_csv(paste0(crashes_path, "Motor_Vehicle_Collisions_-_Crashes.csv"))
+crashes <- readr::read_csv(paste0(traffic.data.folder, "Motor_Vehicle_Collisions_-_Crashes.csv"))
 # subset to those with coordinates
 crashes_loc <- crashes[which(complete.cases(crashes[,c("LONGITUDE", "LATITUDE")])), ]
 # dates

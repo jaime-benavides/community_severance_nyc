@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: prepare traffic co2 emissions data at census block group level
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')

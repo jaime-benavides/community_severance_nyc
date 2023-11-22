@@ -4,7 +4,12 @@ Repository for reviewing the code of the project Development of a Community Seve
 note: please run init_directory_structure.R first to create folders and add the necessary input data to the raw folder as detailed at the end of this readme in order to run the project. 
 
 # note on packages
-need to download PCPhelpers (https://github.com/Columbia-PRIME/PCPhelpers) and pcpr (https://github.com/Columbia-PRIME/pcpr) from github before running the models
+need to download PCPhelpers (https://github.com/Columbia-PRIME/PCPhelpers) and pcpr (https://github.com/Columbia-PRIME/pcpr) from github before running the models. Install as follows
+
+devtools::install_github("Columbia-PRIME/PCPhelpers")
+devtools::install_github("https://github.com/Columbia-PRIME/pcpr/tree/dev")
+
+also package esrisf needs to be installed from github using devtools:: install_github("yonghah/esri2sf")
 
 ## Code and data generated stored at data/generated/ (file name - short description)
 

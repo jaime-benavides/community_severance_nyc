@@ -1,4 +1,4 @@
-# script aim: 
+# script aim: prepare barrier factor variables for input to CSI
 # First step to load packages etc.
 # 1a Declare root directory, folder locations and load essential stuff
 project.folder = paste0(print(here::here()),'/')
@@ -33,7 +33,7 @@ grid_contxt <- grid[grid_id_cntxt, ]
 rm(grid)
 grid_contxt$id_local <- 1:nrow(grid_contxt)
 # road infrastructure osm data downloaded from open street maps - find link in readme
-osm_driving_network <- readRDS(paste0(geometry.data.folder, "roads/osm_driving_network_northeast.rds"))
+osm_driving_network <- readRDS(paste0(generated.data.folder, "osm_driving_network_northeast.rds"))
 # extract driving network following Larkin et al., (2017)
 os_highway_roads <- c(
   #Major roads were derived from OSM motorways, motorway links, trunks, trunk links, primary and secondary roads and links.
